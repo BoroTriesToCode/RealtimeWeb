@@ -1,0 +1,12 @@
+Redis:
+
+wsl --install
+
+sudo service redis-server start
+
+boro@DESKTOP-TF5NIM6:~$ redis-cli
+127.0.0.1:6379> ping
+PONG
+
+127.0.0.1:6379> keys *
+___________

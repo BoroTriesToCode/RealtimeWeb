@@ -1,0 +1,229 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/*______CHAT________*/
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center; 
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-bottom: 60px; 
+  max-width: 800px; 
+  width: 100%; 
+}
+
+.my-message {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.friend-message {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.message-bubble {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+.my-message .message-bubble {
+  background-color: #ec8a3a;
+  color: white;
+  border-top-right-radius: 0;
+}
+
+.friend-message .message-bubble {
+  background-color: #f1f1f1;
+  color: black;
+  border-top-left-radius: 0;
+}
+
+.timestamp {
+  display: block;
+  font-size: 10px;
+  color: rgb(97, 96, 96);
+  text-align: right;
+  margin-top: 5px;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 800px; 
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  max-height: 10%;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0; 
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+/*____TOPIC_____*/
+
+.topic-item {
+  margin-bottom: 20px;
+}
+
+.topic-item h2 {
+  margin-top: 0;
+}
+
+.topic-item button {
+  margin-right: 10px;
+}
+
+/*_______HOME_________*/
+
+.home-container {
+  position: relative;
+  height: 100vh; /* Ensure it takes the full height of the viewport */
+  width: 100%;
+  background-image: url('https://img.freepik.com/free-photo/chinese-civilization-traditional-landscape_1409-6254.jpg?t=st=1719476131~exp=1719479731~hmac=d382bbce658c1ad8e80eb881fa84a8b88f56cb3185a06329fbf204bf1a7b9562&w=1380');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/*_______Modal__________*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  width: 60%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.modal-content {
+  width: 100%;
+  color: black;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/*_________Navbar_____________*/
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  margin-right: 15px;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
